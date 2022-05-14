@@ -9,8 +9,9 @@ import java.util.Objects;
 @Entity
 @Getter
 @Setter
+@Inheritance(strategy = InheritanceType.JOINED)
 @Table(name = "item")
-public class Item {
+public abstract class Item {
     @Id
     @GeneratedValue
     @Column()
