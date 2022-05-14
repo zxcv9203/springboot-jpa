@@ -15,7 +15,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @Table(name = "orders")
-public class Order {
+public class Order extends BaseEntity {
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(
